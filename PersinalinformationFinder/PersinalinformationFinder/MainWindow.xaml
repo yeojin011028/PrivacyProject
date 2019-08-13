@@ -10,24 +10,20 @@
         <TextBlock x:Name="title" HorizontalAlignment="Left" Margin="355,10,0,0" TextWrapping="Wrap" Text="개인정보 검색기 ver 1.0" VerticalAlignment="Top" Width="306" Height="32" FontSize="24" FontFamily="휴먼고딕" FontWeight="Bold"/>
         <Button x:Name="open" Content="폴더열기" HorizontalAlignment="Left"  
                 Width="86" Background="#FFA597D6" BorderBrush="{x:Null}" Foreground="White" FontFamily="휴먼고딕" FontSize="16" FontWeight="Bold" Click="Open_Click" Margin="216,54,0,511"/>
-        <ListView x:Name="view" HorizontalAlignment="Left" Height="165" VerticalAlignment="Top" Width="333" Margin="90,339,0,0">
+        <ListView x:Name="view" HorizontalAlignment="Left" Height="324" VerticalAlignment="Top" Width="333" Margin="90,164,0,0" MouseDoubleClick="DoubleClick">
             <ListView.View>
                 <GridView>
                     <GridViewColumn Header="Name"/>
                 </GridView>
             </ListView.View>
         </ListView>
-        <TextBox x:Name="Read" HorizontalAlignment="Left" Height="340" Margin="557,93,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="300"/>
-        <Button x:Name="save" Content="파일 목록 저장" HorizontalAlignment="Left" Margin="627,478,0,0" VerticalAlignment="Top" Width="162" Height="26" FontFamily="휴먼고딕" FontSize="18" Background="#FFA597D6" BorderBrush="{x:Null}" Foreground="White" FontWeight="Bold"/>
-        <TextBox x:Name="Search" HorizontalAlignment="Left" Height="23" Margin="90,286,0,0" TextWrapping="Wrap" Text="Search" VerticalAlignment="Top" Width="241" />
-        <Button Content="검색" HorizontalAlignment="Left" Margin="355,286,0,0" VerticalAlignment="Top" Width="68" Background="#FFA597D6" BorderBrush="{x:Null}" Foreground="White" FontFamily="휴먼고딕" FontSize="18" FontWeight="Bold" Click="SearchClick"/>
-        <ListView HorizontalAlignment="Left" Height="160" Margin="90,93,0,0" VerticalAlignment="Top" Width="333">
-            <ListView.View>
-                <GridView>
-                    <GridViewColumn/>
-                </GridView>
-            </ListView.View>
-        </ListView>
+        <TextBox x:Name="Read" HorizontalAlignment="Left" Height="378" Margin="526,110,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="331"/>
+        <Button x:Name="save" Content="파일 목록 저장" HorizontalAlignment="Left" Margin="404,525,0,0" VerticalAlignment="Top" Width="162" Height="26" FontFamily="휴먼고딕" FontSize="18" Background="#FFA597D6" BorderBrush="{x:Null}" Foreground="White" FontWeight="Bold"/>
+        <TextBox x:Name="Search" HorizontalAlignment="Left" Height="23" Margin="90,110,0,0" TextWrapping="Wrap" Text="Search" VerticalAlignment="Top" Width="241" />
+        <Button Content="검색" HorizontalAlignment="Left" Margin="355,110,0,0" VerticalAlignment="Top" Width="68" Background="#FFA597D6" BorderBrush="{x:Null}" Foreground="White" FontFamily="휴먼고딕" FontSize="18" FontWeight="Bold" Click="SearchClick"/>
+        <Button x:Name="clear" Content="초기화" HorizontalAlignment="Left" VerticalAlignment="Top" Width="83" Margin="219,508,0,0" RenderTransformOrigin="0.5,0.5" Click="Button_Click" Background="#FFA597D6" BorderBrush="{x:Null}" Foreground="White" FontFamily="휴먼고딕" FontSize="16" FontWeight="Bold" Height="43"/>
+        <TextBox x:Name="load" HorizontalAlignment="Left" Height="23" Margin="607,69,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="250" Opacity="0.985" Background="#FFA597D6" BorderBrush="{x:Null}" Foreground="White" FontFamily="휴먼고딕" FontSize="16"/>
+        <Label Content="폴더경로:" HorizontalAlignment="Left" Margin="524,69,0,0" VerticalAlignment="Top" FontFamily="휴먼고딕" FontSize="16"/>
 
     </Grid>
 </Window>
